@@ -1,0 +1,20 @@
+[project]
+name = "dice-roll-v1"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Andrii Gegliuk",email = "andrii.gegliuk@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "flask (>=3.1.0,<4.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "dice_roll_v1", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
