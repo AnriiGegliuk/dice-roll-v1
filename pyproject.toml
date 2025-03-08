@@ -1,19 +1,14 @@
-[project]
+[tool.poetry]
 name = "dice-roll-v1"
 version = "0.1.0"
-description = ""
-authors = [
-    {name = "Andrii Gegliuk",email = "andrii.gegliuk@gmail.com"}
-]
+description = "A dice rolling application"
+authors = ["Andrii Gegliuk <andrii.gegliuk@gmail.com>"]
 readme = "README.md"
-requires-python = ">=3.10"
-dependencies = [
-    "flask (>=3.1.0,<4.0.0)"
-]
-
-[tool.poetry]
 packages = [{include = "dice_roll_v1", from = "src"}]
 
+[tool.poetry.dependencies]
+python = ">=3.10"
+flask = ">=3.1.0,<4.0.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.5"

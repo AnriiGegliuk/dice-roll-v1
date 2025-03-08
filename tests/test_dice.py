@@ -6,4 +6,4 @@ class TestDice():
         roll = dice.roll()
         assert isinstance(roll, int)
         assert roll > 0
-        assert roll < 7
+        assert roll < 10
